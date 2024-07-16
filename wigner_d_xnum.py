@@ -283,7 +283,7 @@ def wigner_d_xnum(
 ) -> Tensor:
     """
 
-    Wigner d^l_{m,n}(β) for 0 <= β < π for l >= m >= n >= 0.
+    Wigner d^l_{m,n}(β) for 0 <= β <= π for l >= m >= n >= 0.
 
     Args:
         beta: The angle to calculate the Wigner D function for 0 <= beta < pi.
@@ -500,9 +500,7 @@ def retrieve_wigner_d(
     swap_mn: bool = False,
 ) -> Tensor:
     """
-    Wigner d functions for the case where the angle is pi/2 and l >= 0, l > |m|,
-    l > |n|. Use symmetry relations for cases where it is not true that l >= m
-    >= n >= 0.
+    Wigner d functions for the case where the angle is pi/2 and l >= m,n >= 0.
 
     Args:
         wigner_d_values: Tensor
