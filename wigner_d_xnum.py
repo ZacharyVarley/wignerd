@@ -1,5 +1,8 @@
 """
 
+Author: Zachary T. Varley
+Date: July 16th, 2024
+
 Virtual extended precision arithmetic useful for Wigner d recursion. See:
 
 Fukushima, Toshio. "Numerical computation of spherical harmonics of arbitrary 
